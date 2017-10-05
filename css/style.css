@@ -20,7 +20,7 @@ nav {
   color: #ea6c56;
   text-decoration: none;
   font-size: 2.5rem;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 .brand-container {
@@ -34,16 +34,16 @@ nav {
 .nav-list {
   color: #ea6c56;
   font-size: 1.5rem;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   font-weight: 600;
 }
 
 .nav-list a {
-  color: #424343;  
+  color: #424343;
 }
 
 .nav-list a:hover {
-  color: #ea6c56;  
+  color: #ea6c56;
 }
 
 .dropdown {
@@ -79,7 +79,7 @@ nav {
 
 .container {
   text-align: center;
-  margin-top: 12rem;  
+  margin-top: 12rem;
 }
 
 .main-slogan {
@@ -106,7 +106,7 @@ nav {
 .tasks-btn:visited,
 .tasks-btn:active {
   background-color: #fff;
-  color: #0e3655;  
+  color: #0e3655;
 }
 
 .main-points {
@@ -230,7 +230,7 @@ nav {
   background-color: #ea6c56;
 }
 
-.add-task-btn:hover, 
+.add-task-btn:hover,
 .add-task-btn:active {
   color: #fff;
 }
