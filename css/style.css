@@ -172,6 +172,10 @@ nav {
   display: none;
 }
 
+.more {
+    display: none;
+}
+
 .plan {
   background-image: url('../images/plan-background.jpg');
   background-repeat: no-repeat;
