@@ -276,6 +276,14 @@ nav {
   list-style: none;
 }
 
+.slider li {
+  display: none;
+}
+
+.slider li.visible {
+  display: inline-block;
+}
+
 .dot {
   display: inline-block;
   margin-right: 1rem;
