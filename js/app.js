@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
       this.classList.add('active');
       sliderItems[1].classList.add('visible');
     });
-    
+
     dot3.addEventListener('click', function() {
       for (let i = 0; i < sliderItems.length; i++) {
         sliderDots[i].classList.remove('active');
@@ -83,4 +83,67 @@ document.addEventListener('DOMContentLoaded', function() {
       this.classList.add('active');
       sliderItems[2].classList.add('visible');
     });
+
+    // zadanie 6: tasks-list
+    const list = document.querySelector('.plan .list');
+    const input = document.querySelector('.plan input');
+    const addButton = document.querySelector('.add-task-btn');
+
+    addButton.addEventListener('click', addTask);
+
+    function addTask() {
+      const li = document.createElement('li');
+
+      if (input.value != '') {
+        li.innerHTML = input.value;
+        list.appendChild(li);
+        input.value = '';
+      }
+    }
+
+    // function addTaskWithDeleteButton() {
+    //   const li = document.createElement('li');
+    //   const content = document.createElement('div');
+    //   const button = document.createElement('button');
+    //
+    //   if (input.value != '') {
+    //     button.innerHTML = 'USUŃ';
+    //     button.classList.add('btn', 'btn-default');
+    //
+    //     content.innerHTML = input.value;
+    //
+    //     li.appendChild(content);
+    //     li.appendChild(button);
+    //     list.appendChild(li);
+    //
+    //     input.value = '';
+    //   }
+    //
+    //   button.addEventListener('click', function() {
+    //     this.parentElement.parentNode.removeChild(this.parentElement);
+    //   });
+    // }
+
+    // function addTaskWithDoneButton() {
+    //   const li = document.createElement('li');
+    //   const content = document.createElement('div');
+    //   const button = document.createElement('button');
+    //
+    //   if (input.value != '') {
+    //     button.innerHTML = 'ZROBIONE';
+    //     button.classList.add('btn', 'btn-default');
+    //
+    //     content.innerHTML = input.value;
+    //
+    //     li.appendChild(content);
+    //     li.appendChild(button);
+    //     list.appendChild(li);
+    //
+    //     input.value = '';
+    //   }
+    //
+    //   button.addEventListener('click', function() {
+    //     this.previousElementSibling.style.textDecoration = 'line-through';
+    //   });
+    // }
 });
