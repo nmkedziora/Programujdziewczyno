@@ -41,4 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.style.borderBottom = 'none';
       }
     });
+
+    // zadanie 4: back-to-top-button
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    backToTopButton.addEventListener('click', () => {
+      window.scroll(0, 0);
+    });
 });
