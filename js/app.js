@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdown.style.display = 'none';
     });
 
-    // zadanie 2-read-more
+    // zadanie 2: read-more
     const buttons = document.querySelectorAll('.read-more');
 
     for (let button of buttons) {
@@ -29,4 +29,16 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // zadanie 3: menu-border-on-scroll
+    const navbar = document.querySelector('.navbar-fixed-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        navbar.style.borderBottom = '3px solid #ea6c56';
+      }
+      if (window.scrollY === 0) {
+        navbar.style.borderBottom = 'none';
+      }
+    });
 });
